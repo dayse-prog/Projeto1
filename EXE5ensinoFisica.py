@@ -1,7 +1,6 @@
 #EXE 5
 import streamlit as st #Parte grafica
 import pandas as pd #Dados
-import numpy as np #Variaveis para
 import math
 
 
@@ -91,4 +90,5 @@ with Aba6:
 
 
     
+
 
