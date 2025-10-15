@@ -2,7 +2,6 @@
 import streamlit as st #Parte grafica
 import pandas as pd #Dados
 import numpy as np #Variaveis para
-import matplotlib.pyplot as plt
 import math
 
 
@@ -92,3 +91,4 @@ with Aba6:
 
 
     
+
