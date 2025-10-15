@@ -1,8 +1,7 @@
 #EXE 5
 import streamlit as st #Parte grafica
 import pandas as pd #Dados
-import math
-
+import numpy as np #Variaveis para
 
 st.title('Auxilio no ensino de Física')
 Aba1, Aba2, Aba3, Aba4, Aba5, Aba6 = st.tabs(['Reflexão da luz', 'Evaporação', 'Eletricidade',
@@ -79,16 +78,9 @@ with Aba6:
         v = st.number_input("Velocidade da partícula (m/s):", min_value=0.0)
         B = st.number_input("Campo magnético (T):", min_value=0.0)
         theta = st.number_input("Ângulo entre v e B (graus):", min_value=0.0, max_value=180.0)
-        F = q * v * B * math.sin(math.radians(theta))
+        F = q * v * B * np.sin(theta*np.pi/180)
         st.write(f"➡️ Força magnética: **{F:.4f} N**")
 
     st.markdown("---")
     st.caption("Desenvolvido💻 por Dayse Passos com a ajuda do CHAT nas formulas rs'")
-
-
-
-
-
-    
-
 
